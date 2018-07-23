@@ -9,6 +9,7 @@
     android:layout_marginBottom="4dp"
     android:clickable="true"
     android:focusable="true"
+    android:stateListAnimator="@animator/raise_on_click"
     android:elevation="@dimen/card_elevation">
 
     <LinearLayout
@@ -21,7 +22,8 @@
             android:id="@+id/thumbnail"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@color/color_primary_dark" />
+            android:background="@color/color_primary_dark"
+            android:scaleType="centerCrop"/>
 
         <TextView
             tools:text="Article title"
@@ -43,7 +45,6 @@
             style="@style/TextAppearance.AppCompat.Body1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/ltgray"
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:background="@color/color_primary_light"
